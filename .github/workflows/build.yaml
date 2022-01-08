@@ -47,7 +47,8 @@ jobs:
         platforms: linux/amd64
         tags: |
            ghcr.io/${{ github.repository_owner }}/podtato-${{ matrix.component }}:${{ github.sha }}
-   
+  
+
     - name: Run Trivy vulnerability scanner
       uses: aquasecurity/trivy-action@master
       with:
